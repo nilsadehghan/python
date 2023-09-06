@@ -1,0 +1,11 @@
+def binary_search(sort_lst,value):
+    if value in sort_lst:
+
+      for i in sort_lst:
+        if sort_lst[i]==value:
+            return i
+        else:
+            i+=1
+    else:
+        return -1
+print(binary_search([1,2,3],4))
