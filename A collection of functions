@@ -1,0 +1,82 @@
+#we have functions that can do the following
+def addition(x,y):
+     print(x+y)
+
+def subtraction(x,y):
+      print(x-y)
+
+def multiplication(x,y):
+     print(x*y)
+
+def division(x,y):
+     if y!=0:
+        print(x/y)
+     else:
+        #When you want to divide by zero
+        print("ZeroDivisionError: division by zero")
+        
+def power(x,y):
+        print(x**y)
+
+def absolute(x):
+        print(-x)
+
+def maximum(x,y):
+        if x>y:
+          print(x)
+        else:
+          print(y)
+
+
+def minimum(x,y):
+        if x<y:
+          print(x)
+        else:
+          print(y)
+#you should enter your choice first of all and then enter your numbers for calculating
+choice=int(input("Enter your choice from 1 to 8:"))
+print(20*"*")
+
+if choice==1:
+    x = int(input("Enter your First number:"))
+    y = int(input("Enter your Second number:"))
+    addition(x,y)
+
+elif choice==2:
+    x = int(input("Enter your First number:"))
+    y = int(input("Enter your Second number:"))
+    subtraction(x,y)
+
+elif choice==3:
+    x = int(input("Enter your First number:"))
+    y = int(input("Enter your Second number:"))
+    multiplication(x,y)
+
+elif choice==4:
+    x = int(input("Enter your First number:"))
+    y = int(input("Enter your Second number:"))
+    division(x,y)
+
+elif choice==5:
+    x = int(input("Enter your First number:"))
+    y = int(input("Enter your Second number:"))
+    power(x,y)
+
+elif choice == 6:
+    x = int(input("Enter your number:"))
+
+    absolute(x)
+
+elif choice == 7:
+    x = int(input("Enter your First number:"))
+    y = int(input("Enter your Second number:"))
+    maximum(x,y)
+
+elif choice == 8:
+    x = int(input("Enter your First number:"))
+    y = int(input("Enter your Second number:"))
+    minimum(x,y)
+
+else:
+
+    print("invalid choice")
