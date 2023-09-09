@@ -1,0 +1,22 @@
+class Person:
+#we have a `Book` class that models a book and It has attributes for the title, author, publication year, and number of pages.
+    def __init__(self,title):
+
+        self.title=title
+        self.author="William Saroyan"
+        self.publication_year=1956
+        self.number_of_pages=305
+
+    def display(self):
+         print(f"title:{self.title}\nauthor:{self.author}\npublication_year:{self.publication_year}\nnumber_of_pages:{self.number_of_pages}")
+
+    def type(self):
+        if  self.publication_year>2005:
+            print("This  book is not classic")
+
+        else:
+            print("This  book is classic")
+
+user=Person("I love you mama")
+user.display()
+user.type()
