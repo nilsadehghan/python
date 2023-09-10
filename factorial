@@ -1,0 +1,21 @@
+number = int(input(" Enter an integer greater than zero:"))
+def factorial(n):
+  if n > 0:
+      num = 1
+      for i in range(1,n+1):
+
+         num*=i
+
+
+      print(num)
+
+  else:
+        #when you entered negative number,it will show this message for you and then you should enter a valid number.
+        print("You entered invalid number!!")
+        
+        new_number = int(input(" \nEnter again:"))
+
+        factorial(new_number)
+
+
+factorial(number)
