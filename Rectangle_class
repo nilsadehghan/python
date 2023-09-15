@@ -1,0 +1,25 @@
+class Rectangle:
+
+    def __init__(self,width,height):
+
+        self.width=width
+        self.height=height
+
+    def get_area(self):
+        area=self.width*self.height
+        print("area=",area)
+
+    def get_perimeter(self):
+        perimeter=(self.width+self.height)*2
+        print("perimeter=",perimeter)
+
+
+#program runs only when it is executed directly and not when it is imported as a module by other programs.
+
+def main():
+        a=Rectangle(4,5)
+        a.get_area()
+        a.get_perimeter()
+
+if __name__ == "__main__" :
+    main()
