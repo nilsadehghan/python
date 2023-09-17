@@ -1,0 +1,10 @@
+numbers=input("Enter your numbers:")
+num_list=[int(x) for x in numbers.split(",")]
+summ=0
+for i in num_list:
+
+    if i %2 !=0:
+        summ+=i
+
+
+print("The sum of all even numbers is :",summ)
