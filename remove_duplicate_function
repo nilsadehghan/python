@@ -1,0 +1,23 @@
+#we want to create a list of integers
+def ls_s():
+    numbers = input("Enter your numbers: ")
+    lst = []
+    num = numbers.split(",")
+    for i in num:
+        i = int(i)
+        lst.append(i)
+    return lst
+
+#The function takes a list of integers and return a new list of integers with all duplicates removed
+
+
+def remove_duplicates(lst):
+    new_list = []
+    for n in lst:
+        if n not in new_list:
+            new_list.append(n)
+    return new_list
+
+num_list = ls_s()
+result= remove_duplicates(num_list)
+print(result)
